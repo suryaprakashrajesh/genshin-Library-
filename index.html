@@ -21,84 +21,291 @@
 
 <!-- HERO -->
 <section class="hero">
+   <div class="hero-backdrop"></div>
   <div class="hero-box">
+    <img src="images/columbina3.png" class="bg" alt="">
+    
     <h1>
-  <span class="title-top">ANOS 97</span>
-  <span class="title-bottom">GENSHIN-LIBRARY</span>
-</h1>
+      <span class="title-top">ANOS 97</span>
+      <span class="title-bottom">GENSHIN-LIBRARY</span>
+    </h1>
+
     <p>Discover curated characters, wallpapers, and cute moments.</p>
-    <a href="gallery.html" class="btn-primary">Browse Gallery</a>
   </div>
 </section>
 
-<h1 class="section-title">New Photos</h1>
+
+
+<!-- Subscribe -->
+
 
 <!-- GALLERY -->
 <section id="gallery" class="gallery-section">
+  <div class="section-header-bottom">
+  <h5 class="section-title-text">Featured Gallery</h5>
+  <span class="section-line-bottom"></span>
+</div>
 
- <div class="gallery">
-  <div class="img-card" data-keywords="miko yea electro inazuma winter ">
-      <img src="images/winter-miko.jpg" loading="lazy">
-      <span class="tag">Winter-miko</span>
+  <!-- FEATURED CHARACTERS SHOWCASE -->
+  <div class="featured-section">
+  <div class="featured-layout">
+    <!-- MAIN FEATURED CARD (LEFT) -->
+    <div class="featured-main" data-keywords="ronova pyro death red god">
+      <img src="images/ronova.png" alt="Ronova - Featured Character">
+      <span class="view-badge">FEATURED</span>
+      <div class="featured-info">
+        <div class="featured-name">Ronova</div>
+        <div class="featured-elements">
+          <span class="element-badge">Pyro</span>
+          <span class="element-badge">Fatui</span>
+        </div>
+      </div>
     </div>
-    <div class="img-card" data-keywords="ronova pyro death red god  ">
-      <img src="images/ronova.png" loading="lazy">
+
+    <!-- FEATURED SIDEBAR (RIGHT) -->
+    <div class="featured-sidebar">
+      <!-- FEATURED CARD 1 -->
+      <div class="featured-sidebar-card" data-keywords="miko electro inazuma">
+        <img src="images/winter-miko.jpg" alt="Yae Miko">
+        <div class="featured-sidebar-info">
+          <div class="featured-sidebar-name">Yae Miko</div>
+          <span class="featured-sidebar-element">Electro</span>
+        </div>
+      </div>
+
+      <!-- FEATURED CARD 2 -->
+      <div class="featured-sidebar-card" data-keywords="cloumbina archon hydro">
+        <img src="images/columbina6.png" alt="Columbina">
+        <div class="featured-sidebar-info">
+          <div class="featured-sidebar-name">Columbina</div>
+          <span class="featured-sidebar-element">Hydro</span>
+        </div>
+      </div>
+
+      <!-- FEATURED CARD 3 -->
+      <div class="featured-sidebar-card" data-keywords="alice pyro">
+        <img src="images/Alice2.png" alt="Alice">
+        <div class="featured-sidebar-info">
+          <div class="featured-sidebar-name">Alice</div>
+          <span class="featured-sidebar-element">Pyro</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<br> <br> <br>
+  <hr class="section-divider">
+
+
+  <div class="section-header-bottom">
+  <h5 class="section-title-text">NEW PHOTOS</h5>
+  <span class="section-line-bottom"></span>
+</div>
+ 
+  <div class="filter-bar">
+     <button data-key="all" class="active">All</button> 
+     <button data-key="archon"><img src="images/element/archon.png" alt="Hydro" class="filter-icon"> <span>Archon</span></button> 
+     <button data-key="hydro"><img src="images/element/hydro.png" alt="Hydro" class="filter-icon"> <span>Hydro</span></button> 
+     <button data-key="pyro"><img src="images/element/pyro.png" alt="Pyro" class="filter-icon"> <span>Pyro</span></button>
+    <button data-key="electro"><img src="images/element/electro.png" alt="Electro" class="filter-icon"> <span>Electro</span></button> 
+    <button data-key="cryo"> <img src="images/element/cryo.png" alt="Cryo" class="filter-icon"> <span>Cryo</span></button> 
+    <button data-key="anemo"> <img src="images/element/anemo.png" alt="Anemo" class="filter-icon"> <span>Anemo</span></button> 
+    <button data-key="geo"><img src="images/element/geo.png" alt="Geo" class="filter-icon"> <span>Geo</span></button> 
+    <button data-key="dendro"> <img src="images/element/dendro.png" alt="Dendro" class="filter-icon"> <span>Dendro</span></button> 
+  </div>
+
+<!-- GALLERY -->
+ <div class="search-bar"> 
+  <input type="text" id="searchInput" placeholder="Search character (e.g. Furina, Raiden Shogun...)" autocomplete="off"> 
+  <ul id="suggestions"></ul> 
+</div>
+
+  <!-- GRID -->
+   
+  <div class="gallery">
+       <div class="img-card featured" data-keywords="ronova pyro death red god  ">
+      <img src="images/ronova.png" loading="lazy" alt="Ronova">
+      <div class="img-card-badges">
+        <span class="img-card-element">Pyro</span>
+      </div>
       <span class="tag">Ronova</span>
     </div>
-       <div class="img-card" data-keywords="ronova pyro death red god  ">
-      <img src="images/zibai.jpeg" loading="lazy">
+    <div class="img-card" data-keywords="ronova pyro death red god  ">
+      <img src="images/zibai.jpeg" loading="lazy" alt="Zibai">
+      <div class="img-card-badges">
+        <span class="img-card-element">Pyro</span>
+      </div>
       <span class="tag">Zibai</span>
     </div>
-    <div class="img-card" data-keywords="cloumbina archon hydro ineffa aino paimon mc ather lumain ">
-      <img src="images/columbina67.png" loading="lazy">
-      <span class="tag">cloumbina</span>
+    <div class="img-card" data-keywords="cloumbina archon hydro wanderer durine animo pyro">
+      <img src="images/bula.jpg" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
     </div>
-    <div class="img-card" data-keywords="cloumbina archon hydro  ">
-      <img src="images/columbina6.png" loading="lazy">
-      <span class="tag">cloumbina</span>
+    <div class="img-card featured" data-keywords="miko yea electro inazuma winter ">
+      <img src="images/winter-miko.jpg" loading="lazy" alt="Winter Miko">
+      <div class="img-card-badges">
+        <span class="img-card-element">Electro</span>
+      </div>
+      <span class="tag">Winter Miko</span>
+    </div>
+    <div class="img-card" data-keywords="cloumbina archon hydro">
+      <img src="images/2026.jpg" loading="lazy" alt="Archon Quest">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Archon Quest</span>
+    </div>
+    <div class="img-card" data-keywords="varesa xiloen mc ather lumain event 6.2 paimon">
+      <img src="images/6.2-event.png" loading="lazy" alt="Event">
+      <div class="img-card-badges">
+        <span class="img-card-element">Event</span>
+      </div>
+      <span class="tag">6.2 Event</span>
+    </div>
+     <div class="img-card" data-keywords="Nicole alice pyro">
+      <img src="images/Nicole1.png" loading="lazy" alt="Nicole">
+      <div class="img-card-badges">
+        <span class="img-card-element">Pyro</span>
+      </div>
+      <span class="tag">Nicole</span>
+    </div>
+    <div class="img-card" data-keywords="cloumbina archon hydro ineffa aino paimon mc ather lumain ">
+      <img src="images/columbina67.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
+    </div>
+    <div class="img-card featured" data-keywords="cloumbina archon hydro  ">
+      <img src="images/columbina6.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
     </div>
    <div class="img-card" data-keywords="cloumbina archon hydro  ">
-      <img src="images/columbina5.png" loading="lazy">
-      <span class="tag">cloumbina</span>
+      <img src="images/columbina5.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
     </div>
     <div class="img-card" data-keywords="cloumbina archon hydro sandrone">
-      <img src="images/columbina-bonk.png" loading="lazy">
-      <span class="tag">cloumbina</span>
+      <img src="images/columbina-bonk.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
+    </div>
+     <div class="img-card" data-keywords="cloumbina archon hydro sandrone book ">
+      <img src="images/columbina-book.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
+    </div>
+     <div class="img-card featured" data-keywords="cloumbina archon hydro moon Arlecchino nefer jahoda">
+      <img src="images/columbina4.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
     </div>
     <div class="img-card" data-keywords="cloumbina archon hydro sandrone">
-      <img src="images/columbina-vs-sandrone.png" loading="lazy">
-      <span class="tag">sandrone</span>
+      <img src="images/columbina-vs-sandrone.png" loading="lazy" alt="Sandrone">
+      <div class="img-card-badges">
+        <span class="img-card-element">Geo</span>
+      </div>
+      <span class="tag">Sandrone</span>
     </div>
+    <div class="img-card" data-keywords="cloumbina archon hydro durine wanderer">
+      <img src="images/columbina3.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
+    </div>
+
+    <div class="img-card" data-keywords="lauma nefer cloumbina archon">
+     <img src="images/AQ-ss.png" loading="lazy" alt="Archon Quest">
+      <div class="img-card-badges">
+        <span class="img-card-element">Story</span>
+      </div>
+      <span class="tag">Archon Quest</span>
+    </div>
+
     <div class="img-card" data-keywords="alice pyro">
-      <img src="images/Alice2.png" loading="lazy">
+      <img src="images/Alice.png" loading="lazy" alt="Alice">
+      <div class="img-card-badges">
+        <span class="img-card-element">Pyro</span>
+      </div>
+      <span class="tag">Alice</span>
+    </div>
+    <div class="img-card" data-keywords="furina hydro alice">
+      <img src="images/furina-summon.jpg" loading="lazy" alt="Furina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Furina</span>
+    </div>
+    <div class="img-card featured" data-keywords="alice pyro">
+      <img src="images/Alice2.png" loading="lazy" alt="Alice">
+      <div class="img-card-badges">
+        <span class="img-card-element">Pyro</span>
+      </div>
       <span class="tag">Alice</span>
     </div>
     <div class="img-card" data-keywords="cloumbina archon hydro">
-      <img src="images/columbina2.png" loading="lazy">
-      <span class="tag">cloumbina</span>
+      <img src="images/columbina1.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
     </div>
-    <div class="img-card" data-keywords="alice pyro">
-      <img src="images/Alice.png" loading="lazy">
-      <span class="tag">Alice</span>
+
+    <div class="img-card" data-keywords="cloumbina archon hydro">
+      <img src="images/columbina2.png" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
     </div>
- </div>
+     <div class="img-card" data-keywords="cloumbina archon hydro sandrone book ">
+      <img src="images/col.jpg" loading="lazy" alt="Columbina">
+      <div class="img-card-badges">
+        <span class="img-card-element">Hydro</span>
+      </div>
+      <span class="tag">Columbina</span>
+    </div>
+            <div class="img-card" data-keywords="cloumbina archon 2026 hydro wanderer durine animo pyro">
+  <img src="images/colambina2026.jpg" loading="lazy" alt="Columbina">
+  <div class="img-card-badges">
+    <span class="img-card-element">Hydro</span>
+  </div>
+  <span class="tag">Columbina</span>
+</div>
+  </div>
+</section>
 <p id="emptyState" class="empty-state">
   No images found for this search.
 </p>
 
-
-
-<section class="hero">
-  <div class="hero-box">
-<a href="gallery.html" class="btn-primary">Browse Gallery</a>
-  </div>
 </section>
 
 
 <!-- IMAGE MODAL -->
 <div class="modal" id="imageModal">
   <button class="modal-close" aria-label="Close">&times;</button>
-  <img class="modal-img" id="modalImg">
+  <div class="modal-content">
+    <div class="modal-nav">
+      <button class="modal-btn modal-prev" aria-label="Previous image">❮</button>
+      <button class="modal-btn modal-next" aria-label="Next image">❯</button>
+    </div>
+    <img class="modal-img" id="modalImg" alt="">
+    <div class="modal-info" id="modalInfo"></div>
+  </div>
 </div>
 
 <div class="footer-divider"></div>
